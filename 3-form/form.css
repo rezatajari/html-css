@@ -1,0 +1,7 @@
+input[type=text],input[type=email],textarea{
+    border: red 1px solid;
+    background-color: lightgreen;
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
