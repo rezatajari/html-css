@@ -1,6 +1,7 @@
 div.boxmodel{
     background-color: lightgreen;
     width: 500px;
+    border: 13px solid navy;
     padding: 15px;
     margin: 19px;
 }
