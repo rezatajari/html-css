@@ -1,0 +1,29 @@
+#p1{
+    width: 233px;
+    background-color:rgb(233, 217, 217);
+    padding: 20px;
+    border: 10px solid white;
+    margin: 20px;
+    outline: 2px solid blue;
+    float: left;
+}   
+
+#p2{
+    width: 233px;
+    background-color:rgb(233, 217, 217);
+    padding: 20px;
+    border: 10px solid white;
+    margin: 20px;
+    outline: 2px solid blue;
+    float: left;
+}
+#p3{    
+    position: relative;
+    width: 233px;
+    background-color:rgb(233, 217, 217);
+    padding: 20px;
+    border: 10px solid white;
+    margin: 20px;
+    outline: 2px solid blue;
+    float: left;
+}
