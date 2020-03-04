@@ -1,0 +1,36 @@
+html {
+    background: -internal-root-color;
+}
+
+body {
+    background: rgb(190, 182, 182);
+    margin: 10%;
+}
+
+header {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#img {
+    padding: 10px;
+    width: auto;
+    background: white;
+    text-align: center;
+}
+
+figcaption {
+    width: auto;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+.main-content {
+    text-align: center;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
