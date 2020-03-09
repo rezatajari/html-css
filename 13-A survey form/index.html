@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>A survey form</title>
+</head>
+
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form id="survey-form">
+        <label id="name-label">
+            Name <br> <input  class="form-control" type="text" required id="name" placeholder="Enter your name">
+        </label>
+        <br>
+        <label id="email-label">
+           Email <br> <input  class="form-control" type="email" required id="email" placeholder="Enter your Email"> 
+        </label>
+        <br>
+        <label id="number-label">
+           Age (optional) <br> <input  class="form-control" type="number" required id="number" min="0" max="10" placeholder="Age">
+        </label>
+        <br>
+
+        <p>Which option best describes your current role?</p>
+        <select id="dropdown">
+            <option>Select current role</option>
+            <option>Student</option>
+            <option>Full Time Job</option>
+            <option>Full Time Learner</option>
+            <option>Prefer not to say</option>
+            <option>Other</option>
+        </select>
+
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label class="lbl-radio"><input class="input-radio" type="radio" name="Definitely"> Definitely<br></label>
+        <label class="lbl-radio"><input class="input-radio" type="radio" name="Maybe"> Maybe<br></label>
+        <label class="lbl-radio"><input class="input-radio" type="radio" name="Not sure"> Not sure<br></label>
+
+        <p>What is your favorite feature of freeCodeCamp?</p>
+        <select id="dropdown">
+            <option>Select current role</option>
+            <option>Student</option>
+            <option>Full Time Job</option>
+            <option>Full Time Learner</option>
+            <option>Prefer not to say</option>
+            <option>Other</option>
+        </select>
+
+        <br>
+        <p>What would you like to see improved? <span>(Check all that apply)</span></p>
+        <label>
+        <label class="lbl-checkbox"><input class="input-checkbox" type="checkbox" value="Front-end Projects"> Front-end Projects<br></label>
+        <label class="lbl-checkbox"><input class="input-checkbox" type="checkbox" value="Back-end Projects"> Back-end Projects<br></label>
+        <label class="lbl-checkbox"><input class="input-checkbox" type="checkbox" value="Data Visualization"> Data Visualization<br></label>
+        <label class="lbl-checkbox"><input class="input-checkbox" type="checkbox" value="Challenges"> Challenges<br></label>
+        <label class="lbl-checkbox"><input class="input-checkbox" type="checkbox" value="Open Source Community"> Open Source Community<br></label>
+        <label class="lbl-checkbox"><input class="input-checkbox" type="checkbox" value="Gitter help rooms"> Gitter help rooms<br></label>
+        <label class="lbl-checkbox"><input class="input-checkbox" type="checkbox" value="Videos"> Videos<br></label>
+        <label class="lbl-checkbox"><input class="input-checkbox" type="checkbox" value="City Meetups"> City Meetups<br></label>
+        <label class="lbl-checkbox"><input class="input-checkbox" type="checkbox" value="Wiki"> Wiki<br></label>
+        <label class="lbl-checkbox"><input class="input-checkbox" type="checkbox" value="Forum"> Forum<br></label>
+        <label class="lbl-checkbox"><input class="input-checkbox" type="checkbox" value="Additional Courses"> Additional Courses<br></label>
+
+        <p>Any comments or suggestions?</p>
+        <textarea class="textArea" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+        <br>
+
+        <input type="button" id="submit" value="Sumbit">
+    </form>
+</body>
+
+</html>
