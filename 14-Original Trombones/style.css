@@ -1,0 +1,58 @@
+body {
+    font-family: sans-serif;
+}
+
+img {
+    width: 20em;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    background-color: white;
+}
+
+header>div {
+    width: 60vw;
+}
+
+nav>ul {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    width: 20em;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    margin-top: 9em;
+    align-items: center;
+}
+
+.hero>input {
+    width: 30%;
+    padding: 5px;
+    margin-bottom: 7px;
+}
+
+.hero>button {
+    background-color: rgba(255, 166, 0, 0.774);
+    color: black;
+    font-family: tahoma;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px 0 7px 0;
+    outline: none;
+    cursor: pointer;
+    padding: 7px 15px;
+}
+
+.hero>button:hover {
+    background-color: orange;
+    transition: 0.7s;
+}
