@@ -34,7 +34,7 @@ nav>ul {
 }
 
 .hero>input {
-    width: 30%;
+    width: 19%;
     padding: 5px;
     margin-bottom: 7px;
 }
@@ -55,4 +55,23 @@ nav>ul {
 .hero>button:hover {
     background-color: orange;
     transition: 0.7s;
+}
+
+.features {
+    margin-left: 20%;
+}
+
+.icon {
+    width: 7em;
+    color: darkorange;
+}
+
+.grid {
+    display: flex;
+    align-items: center;
+}
+
+.content-div {
+    padding: 5px;
+    max-width: 50%;
 }
