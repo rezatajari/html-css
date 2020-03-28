@@ -1,3 +1,5 @@
+/* set public attribute */
+
 body {
     background-color: #0f6d39;
 }
@@ -12,12 +14,28 @@ h2 {
     width: 90%;
 }
 
+a:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
+
+/* icon position for wide boxes */
+
+.container>a>i {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+/* icon position for square boxes */
+
 
 /* all of wide boxes */
 
 .wide {
     position: relative;
-    background-color: red;
     width: 300px;
     height: 120px;
     margin: 5px;
@@ -75,9 +93,4 @@ a.wide,
 
 .yellow {
     background-color: #dbb701;
-}
-
-a:hover {
-    transform: scale(1.05);
-    transition: transform 0.2s;
 }
