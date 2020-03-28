@@ -86,3 +86,41 @@ nav>ul {
     width: 100%;
     max-width: 550px;
 }
+
+.pricing {
+    display: flex;
+    flex-direction: row;
+    width: calc(300% / 3);
+    margin: 0 auto;
+    padding: 25px 0;
+    /* justify-content: space-evenly;
+    text-align: center; */
+}
+
+.pricing>.border {
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-top: 70px;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.pricing>.border>div {
+    background-color: #ddd;
+    width: 100%;
+    padding: 1px 0;
+}
+
+.pricing>.border>button {
+    background-color: #f1c40f;
+    border-radius: 3px;
+    padding: 7px 11px;
+    border: none;
+    margin-bottom: 11px;
+}
+
+.pricing>.border>button:hover {
+    background-color: orange;
+    transition: background-color 0.7s;
+}
