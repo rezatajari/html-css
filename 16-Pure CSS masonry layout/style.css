@@ -1,4 +1,56 @@
+/* piblic attributes */
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #1e8bc3;
     color: white;
+}
+
+h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+.main {
+    width: 80%;
+    column-count: 4;
+}
+
+
+/* all border & style around */
+
+.border {
+    border: 5px solid whitesmoke;
+    border-radius: 10px;
+    width: 370px;
+    height: 300px;
+    margin: 10px;
+}
+
+
+/* wide boxes style */
+
+.b-wide {
+    width: 117%;
+    height: fit-content;
+}
+
+
+/* outside place of elements */
+
+.grid-outside {
+    margin: 10px;
+}
+
+
+/* images style */
+
+.img-style {
+    margin: 10px;
+    width: 117%;
+    height: 17vw;
+    border-radius: 10px;
 }
