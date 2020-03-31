@@ -1,3 +1,48 @@
+/* public */
+
+.menu>header {
+    position: fixed;
+    font-size: x-large;
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    top: 0px;
+    left: 0px;
+}
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+article {
+    margin: 9px;
+}
+
+code {
+    display: block;
+    padding: 6px;
+    background-color: #f7f7f7;
+    white-space: pre;
+    line-height: 2;
+    margin-left: 30px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2;
+    font-size: 0.96em;
+    margin-left: 15px;
+}
+
+ul>li {
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+    margin: 30px 0px 0px 15px;
+}
+
+
 /* setting value of menu & childs them */
 
 .menu {
@@ -5,14 +50,16 @@
     flex-direction: column;
     width: fit-content;
     position: fixed;
-    height: 100%;
-    border-right: 5px solid rosybrown;
+    margin-top: 50px;
+    height: 90%;
+    border-right: 5px solid rgba(0, 22, 22, 0.4);
+    overflow-y: auto;
 }
 
 .menu>a {
     text-decoration: none;
     font-size: large;
-    color: cadetblue;
+    color: #4d4e53;
 }
 
 .menu>a {
@@ -24,5 +71,5 @@
 /* main setting */
 
 .main-content {
-    margin-left: 25%;
+    margin-left: 270px;
 }
