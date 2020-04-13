@@ -14,6 +14,10 @@ html {
     margin: 0 auto;
 }
 
+
+/* top header
+====================================================== */
+
 .header__top {
     background-color: #fff;
     padding: 1em 0;
@@ -27,6 +31,10 @@ html {
     display: block;
     width: 4em;
 }
+
+
+/* banner
+===================================================== */
 
 .banner {
     background: url("../images/banner.jpg") no-repeat top center/cover;
@@ -62,6 +70,85 @@ html {
     padding: 0.7em 4em;
     margin: 2em auto;
 }
+
+
+/* main
+========================================================== */
+
+
+/* recent works
+========================================================== */
+
+.work-title {
+    text-transform: uppercase;
+}
+
+.work-text {
+    color: #777777;
+    line-height: 1.5em;
+}
+
+.work-inputs {
+    display: block;
+    font-size: 1em;
+    font-style: inherit;
+    width: 90%;
+    margin: .5em auto 0;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    padding: .5em;
+}
+
+.work-btn {
+    display: block;
+    width: 90%;
+    background-color: #008ecc;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 1.1em;
+    padding: 0.4em;
+    margin: 1em auto 0;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* contact us
+========================================================== */
+
+.contact-title {
+    padding-bottom: 1em;
+    border-bottom: 3px solid hsl(198, 100%, 40%);
+    margin-left: 1.4em;
+}
+
+.contact-row {
+    margin: 1em 0;
+}
+
+.contact-icon {
+    display: inline-block;
+    margin-right: .5em;
+}
+
+.contact-text {
+    color: #777777;
+    display: inline-block;
+    line-height: 1.5em;
+}
+
+.map {
+    display: block;
+    width: 100%;
+    height: 40vh;
+}
+
+
+/* footer
+========================================================== */
 
 .footer {
     text-align: center;
