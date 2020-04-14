@@ -1,0 +1,110 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --main-body-color: #B56B42;
+    --main-in-ears: #5C4023;
+    --main-in-face: #152B35;
+    --main-body: #71CDF4;
+}
+
+body {
+    background-color: var(--main-body);
+}
+
+
+/* container
+============================================================== */
+
+.container {
+    position: relative;
+    width: 41em;
+    background-color: var(--main-body);
+    margin: 5em auto 0;
+}
+
+
+/* ears
+============================================================== */
+
+.left-ears,
+.right-ears {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: var(--main-body-color);
+}
+
+.ring-left-ears,
+.ring-right-ears {
+    position: absolute;
+    top: 9%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background-color: var(--main-in-ears);
+    border-radius: 50%;
+}
+
+.right-ears {
+    right: 0;
+}
+
+
+/* face
+============================================================== */
+
+.face {
+    position: relative;
+    background-color: var(--main-body-color);
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+}
+
+
+/* eys
+============================================================== */
+
+.left-eye,
+.right-eye {
+    position: absolute;
+    top: 40%;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    background-color: var(--main-in-face);
+}
+
+.left-eye {
+    left: 35%;
+}
+
+.right-eye {
+    right: 35%;
+}
+
+
+/* nose 
+============================================================== */
+
+.nose {
+    position: absolute;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    top: 57%;
+    margin: 0 auto;
+    background-color: var(--main-in-face);
+}
