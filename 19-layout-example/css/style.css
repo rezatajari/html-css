@@ -105,42 +105,8 @@
     .work-title {
         text-transform: uppercase;
     }
-    
-    .work-text {
-        color: #777777;
-        line-height: 1.5em;
-    }
-    
-    .work-inputs {
-        display: block;
-        font-size: 1em;
-        font-style: inherit;
-        width: 90%;
-        margin: .5em auto 0;
-        border: 2px solid #ccc;
-        border-radius: 3px;
-        padding: .5em;
-    }
-    
-    .work-btn {
-        display: block;
-        width: 90%;
-        background-color: #008ecc;
-        color: white;
-        border: none;
-        text-transform: uppercase;
-        border-radius: 3px;
-        font-weight: 700;
-        font-size: 1.1em;
-        padding: 0.4em;
-        margin: 1em auto 0;
-        outline: none;
-        cursor: pointer;
-    }
     /* projects
 ========================================================== */
-    
-    .projects {}
     
     .project {
         position: relative;
@@ -214,6 +180,111 @@
     .project-links-gray {
         background-color: hsla(0, 100%, 100%, 0.5);
         color: #555;
+    }
+    /* poeple
+    ====================================================== */
+    
+    .people {
+        background: url(../images/banner.jpg) no-repeat top center/cover;
+        background-color: #00b2e8;
+        background-blend-mode: soft-light;
+        padding: 4em 0 2em;
+    }
+    
+    .section-title-people {
+        padding-top: 0;
+        color: #fff;
+    }
+    
+    .people-figure {
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .avatar-image {
+        display: block;
+        margin: 0 auto;
+        width: 10%;
+        border-radius: 50%;
+        border: 2px solid #fff;
+    }
+    
+    .image-caption {
+        position: relative;
+        font-weight: 100;
+        font-family: tahoma;
+        color: #eee;
+    }
+    
+    .image-name {
+        margin: 0;
+        padding: 1em 0;
+    }
+    
+    .image-caption>p {
+        width: 80%;
+        font-size: .9em;
+        line-height: 1.5em;
+        margin: 0 auto;
+    }
+    
+    .left-quote,
+    .right-quote {
+        position: absolute;
+        display: block;
+    }
+    
+    .left-quote {
+        top: 0;
+    }
+    
+    .right-quote {
+        right: 0;
+    }
+    
+    .back-next {
+        border: 2px solid #eee;
+        display: table;
+        margin: 5em auto 0;
+    }
+    
+    .back-next>span {
+        display: inline-block;
+        padding: .1em .3em;
+    }
+    /* contact
+    ====================================================== */
+    
+    .contact-text {
+        color: #777777;
+        line-height: 1.5em;
+    }
+    
+    .contact-inputs {
+        display: block;
+        font-size: 1em;
+        font-style: inherit;
+        width: 90%;
+        margin: .5em auto 0;
+        border: 2px solid #ccc;
+        border-radius: 3px;
+        padding: .5em;
+    }
+    
+    .contact-btn {
+        display: block;
+        width: 90%;
+        background-color: #008ecc;
+        color: white;
+        border: none;
+        text-transform: uppercase;
+        border-radius: 3px;
+        font-weight: 700;
+        font-size: 1.1em;
+        padding: 0.4em;
+        margin: 1em auto 0;
+        outline: none;
+        cursor: pointer;
     }
     /* contact us
 ========================================================== */
