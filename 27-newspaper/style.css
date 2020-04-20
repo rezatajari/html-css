@@ -1,0 +1,42 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.inner-container {
+    margin: 0 auto;
+    max-width: 50em;
+}
+
+.article {
+    margin-bottom: 5em;
+}
+
+.title {
+    text-transform: capitalize;
+}
+
+.parageraph {
+    color: gray;
+    line-height: 1.5em;
+}
+
+.cherry-left {
+    float: left;
+    width: 20%;
+}
+
+.cherry-right {
+    float: right;
+    width: 40%;
+}
+
+.cherry-3left {
+    float: left;
+    width: 10%;
+}
