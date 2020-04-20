@@ -1,0 +1,73 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+/* navigation
+=================================================== */
+
+.inner-container {
+    max-width: 65em;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 1em;
+}
+
+.inner-container::before,
+.inner-container::after {
+    content: '';
+    display: table;
+}
+
+.inner-container::after {
+    clear: both;
+}
+
+.nav {
+    padding: 0;
+    margin: 0;
+    float: right;
+    width: 27%;
+}
+
+.nav-link {
+    list-style-type: none;
+    padding: 0.1em 0;
+}
+
+.is-selected .nav-links {
+    background-color: #415F69;
+    color: white;
+}
+
+.nav-links {
+    display: block;
+    padding: 0.5em 0.7em;
+    color: #56727C;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.nav-links:hover {
+    background-color: #415F69;
+    color: white;
+}
+
+.content {
+    line-height: 1.5em;
+    text-align: justify;
+    font-family: tahoma;
+    float: left;
+    width: 70%;
+}
+
+.title {
+    text-transform: capitalize;
+    margin: 0;
+}
