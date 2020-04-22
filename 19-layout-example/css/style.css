@@ -122,6 +122,22 @@ html {
 /* welcome
 =========================================================== */
 
+@media (min-width:48em) {
+    .welcome-float {
+        float: right;
+        width: 66.66%;
+    }
+    .welcome-bg {
+        background-image: linear-gradient(to right, #fff 50%, #009ee3 50%);
+    }
+}
+
+@media(max-width:48em) {
+    .welcome-bg .inner__container {
+        width: 100%;
+    }
+}
+
 .welcome {
     background-color: #009ee3;
     padding: 3em 1em;
@@ -158,12 +174,20 @@ html {
 /* recent works
 ========================================================== */
 
+@media (min-width:48em) {
+    .recent-works-float {
+        float: left;
+        width: 33.33%;
+    }
+}
+
 .recet-works {
     padding: 1em 2em;
 }
 
 .work-title {
     text-transform: uppercase;
+    padding-top: .7em;
 }
 
 
@@ -177,6 +201,12 @@ html {
     padding: 2em 0;
     line-height: 1.5em;
     color: gray;
+}
+
+@media (min-width:48em) {
+    .service-items {
+        width: 25%;
+    }
 }
 
 .service-icon {
