@@ -130,6 +130,19 @@ html {
     .welcome-bg {
         background-image: linear-gradient(to right, #fff 50%, #009ee3 50%);
     }
+    .welcome::before {
+        position: absolute;
+        content: ' ';
+        top: 0;
+        bottom: 0;
+        left: 0;
+        height: 0;
+        margin: auto;
+        border-top: 25px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-left: 20px solid white;
+    }
 }
 
 @media(max-width:48em) {
@@ -139,8 +152,9 @@ html {
 }
 
 .welcome {
+    position: relative;
     background-color: #009ee3;
-    padding: 3em 1em;
+    padding: 3em 2em;
     color: #fff;
     text-align: justify;
 }
