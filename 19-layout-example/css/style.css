@@ -146,8 +146,33 @@
     /* recent works
 ========================================================== */
     
+    .recet-works {
+        padding: 1em 2em;
+    }
+    
     .work-title {
         text-transform: uppercase;
+    }
+    /* service
+    ====================================================== */
+    
+    .service-items {
+        text-align: center;
+        float: left;
+        width: 50%;
+        padding: 2em 0;
+        line-height: 1.5em;
+        color: gray;
+    }
+    
+    .service-icon {
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+    
+    .service-title-items {
+        color: black;
+        text-transform: capitalize;
     }
     /* projects
 ========================================================== */
