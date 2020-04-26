@@ -1,0 +1,78 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #926239;
+}
+
+.showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/showcase.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 0 1em;
+}
+
+.showcase h1 {
+    margin: 0;
+}
+
+.link {
+    text-transform: capitalize;
+    padding: 1em 1.5em;
+    color: #926239;
+    border: 1px solid #926239;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+section {
+    text-align: justify;
+}
+
+.a,
+.b {
+    padding: 1em;
+}
+
+.a {
+    background-color: #926239;
+    color: #f4f4f4;
+}
+
+.b {
+    background-color: #eee;
+}
+
+.c {
+    display: flex;
+}
+
+.c div {
+    padding: 1em;
+}
+
+.b1,
+.b3 {
+    background-color: #926239;
+    color: #f4f4f4;
+}
+
+.b2 {
+    color: #926239;
+    background-color: #f4f4f4;
+}
