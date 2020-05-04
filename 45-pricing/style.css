@@ -1,0 +1,98 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: tahoma;
+    background-color: deepskyblue;
+}
+
+.con {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width:37em) {
+    .con {
+        max-width: 70em;
+    }
+}
+
+.it-pt {
+    background-color: #fff;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5em;
+    align-items: center;
+    padding: 3em;
+    border-radius: 5px;
+    order: 1;
+}
+
+@media (min-width:37em) {
+    .it-pt {
+        width: 30%;
+        margin: 0 .5em;
+    }
+}
+
+.it-pt:nth-child(2) {
+    padding: 5em 3em;
+    background-color: gold;
+    order: 0;
+}
+
+@media (min-width:37em) {
+    .it-pt:nth-child(2) {
+        order: 1;
+    }
+}
+
+.it-pt h2 {
+    margin-top: 0;
+    text-transform: capitalize;
+}
+
+.it-pt span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    font-weight: 900;
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+}
+
+.it-pt p {
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.it-pt a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    padding: .7em 7em;
+    background-color: hsla(240, 100%, 50%, .7);
+    border-radius: 5px;
+}
+
+@media (min-width:37em) {
+    .it-pt a {
+        padding: .7em 3em;
+    }
+}
