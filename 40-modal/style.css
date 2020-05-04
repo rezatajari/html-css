@@ -1,0 +1,36 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font: 100%/1.6 helvetica;
+    margin: 0;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+
+.modal {
+    background-color: #fff;
+    padding: 1em;
+    text-align: justify;
+    border-radius: 3px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+}
