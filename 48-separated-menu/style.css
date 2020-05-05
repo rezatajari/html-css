@@ -1,0 +1,45 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.buld-menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1d1d1d;
+    flex-wrap: wrap;
+}
+
+.menu {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu li {
+    list-style-type: none;
+    padding: .5em .3em;
+}
+
+.menu a {
+    display: block;
+    padding: 1em 1.2em;
+    border-radius: 7px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover,
+.menu:nth-child(1) li:nth-child(1) a {
+    background-color: #e43;
+}
