@@ -1,0 +1,75 @@
+        html {
+            box-sizing: border-box;
+        }
+        
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            font-family: tahoma;
+            line-height: 1.7em;
+            text-align: justify;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .header,
+        .footer {
+            background-color: #eee;
+            line-height: 5em;
+            text-transform: capitalize;
+            text-align: center;
+        }
+        
+        .main-grid {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        
+        .main {
+            flex-grow: 1;
+            padding: .5em;
+        }
+        
+        .main h2 {
+            text-transform: capitalize;
+        }
+        
+        .main p {
+            text-align: justify;
+        }
+        
+        .nav,
+        .left-side {
+            background-color: #eee;
+            padding: 1em;
+            margin: .5em;
+            text-transform: capitalize;
+            border-radius: 3px;
+            text-align: center;
+        }
+        
+        .nav {
+            order: -1;
+        }
+        
+        @media(min-width:48em) {
+            .main-grid {
+                flex-direction: row;
+            }
+            .left-side {
+                order: -1;
+            }
+            .nav {
+                order: 1;
+            }
+        }
