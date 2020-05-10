@@ -1,0 +1,57 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: tahoma;
+    font-weight: 700;
+    line-height: 1.6em;
+    background-color: #1d1d1d;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    max-width: 60em;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+@media(min-width:48em) {
+    .cards {
+        flex-direction: row;
+    }
+}
+
+.card {
+    margin: .5em;
+    background: #147;
+    border-radius: 9px;
+}
+
+@media(min-width:48em) {
+    .card {
+        /* or flex: 1 0 0% */
+        flex: 1 0 0%;
+    }
+}
+
+.icon {
+    color: gray;
+    background-color: #fff;
+    text-align: center;
+    font-size: 5em;
+    padding: .5em 0;
+}
+
+.info {
+    padding: 1em;
+    color: seagreen;
+}
