@@ -1,0 +1,158 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --main-background-body: #25A9FC;
+    --main-head-ears: #A6BECF;
+    --main-ring-ears: #819CAF;
+    --main-eye: #ffffff;
+    --main-center-eye: #27354A;
+    --main-nose: #be845f;
+}
+
+@keyframes changecolor {
+    0% {
+        background-color: #A6BECF;
+    }
+    33% {
+        background-color: #ccc;
+    }
+    66% {
+        background-color: #e43;
+    }
+    99% {
+        background-color: #A6BECF;
+    }
+}
+
+body {
+    background-color: var(--main-background-body);
+}
+
+
+/* head
+================================================= */
+
+.head {
+    position: relative;
+    width: 20em;
+    height: 20em;
+    background-color: var(--main-head-ears);
+    border-radius: 50%;
+    margin: 12em auto 0;
+    animation: changecolor 2s infinite;
+}
+
+
+/* eyes
+================================================== */
+
+.eye-left,
+.eye-right {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    top: 25%;
+    background-color: var(--main-eye);
+    border-radius: 50%;
+}
+
+.eye-left {
+    left: 22%;
+}
+
+.eye-right {
+    right: 22%;
+}
+
+
+/* ring eyes
+=================================================== */
+
+.center-eye {
+    position: absolute;
+    width: 32%;
+    height: 32%;
+    background-color: var(--main-center-eye);
+    border-radius: 50%;
+    top: 32%;
+    left: 33%;
+}
+
+
+/* nose
+=================================================== */
+
+.nose {
+    position: absolute;
+    width: 22%;
+    height: 38%;
+    background-color: var(--main-nose);
+    border-radius: 50px;
+    left: 38%;
+    top: 43%;
+}
+
+
+/* harir
+=================================================== */
+
+.hair-left,
+.hair-right {
+    position: absolute;
+    bottom: 94%;
+    border-right: 25px solid transparent;
+    border-bottom: 38px solid var(--main-head-ears);
+    border-left: 15px solid transparent;
+    z-index: -1;
+}
+
+.hair-left {
+    left: 30%;
+}
+
+.hair-right {
+    right: 35%;
+    bottom: 92%;
+}
+
+
+/* ears & ring theirs
+=================================================== */
+
+.left-ears,
+.right-ears {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    background-color: var(--main-head-ears);
+    border-radius: 50%;
+    top: 10%;
+    z-index: -1;
+    animation: changecolor 2s infinite;
+}
+
+.left-ears {
+    left: -22%;
+}
+
+.right-ears {
+    right: -22%;
+}
+
+.ears-rings {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background-color: var(--main-ring-ears);
+    border-radius: 50%;
+    left: 10%;
+    top: 10%;
+}

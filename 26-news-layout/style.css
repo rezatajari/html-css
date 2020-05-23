@@ -1,0 +1,49 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::before {
+    box-sizing: inherit;
+}
+
+.inner-container {
+    margin: 0 auto;
+    max-width: 60em;
+    padding: 2em 0;
+}
+
+
+/* clearfix
+========================================================= */
+
+.row::before,
+.row::after {
+    content: '';
+    display: table;
+}
+
+.row::after {
+    clear: both;
+}
+
+.item {
+    float: right;
+    padding: 1em;
+    width: 33.33%;
+}
+
+.icon {
+    text-align: center;
+    background-color: #b1dfdb;
+    color: white;
+    padding: .5em 0;
+    font-size: 5em;
+}
+
+.content {
+    padding: 0 .9em;
+    text-align: justify;
+    color: #009788;
+}

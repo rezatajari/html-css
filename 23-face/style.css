@@ -1,0 +1,153 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --main-color: #1b1b1b;
+    --main-other: #fff;
+}
+
+body {
+    background-color: var(--main-color)
+}
+
+
+/* head
+=============================================== */
+
+.head {
+    position: relative;
+    width: 20em;
+    height: 20em;
+    background-color: var(--main-other);
+    margin: 10em auto 0;
+}
+
+
+/* eyes
+================================================ */
+
+.left-eye,
+.right-eye {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    top: 20%;
+    animation: eyecolor 2s infinite;
+}
+
+.left-eye {
+    left: 20%;
+}
+
+.right-eye {
+    right: 20%;
+}
+
+
+/* annimation for eyes 
+
+================================================*/
+
+@keyframes eyecolor {
+    50% {
+        background-color: cyan;
+    }
+}
+
+
+/* nose
+================================================ */
+
+.nose {
+    position: absolute;
+    width: 20%;
+    height: 40%;
+    background-color: var(--main-color);
+    left: 40%;
+    top: 30%;
+}
+
+
+/* mouth
+================================================ */
+
+.mouth {
+    position: absolute;
+    width: 40%;
+    height: 10%;
+    background-color: var(--main-color);
+    left: 30%;
+    bottom: 10%;
+    z-index: 4;
+    animation: smile 2s infinite;
+}
+
+
+/* annimation for mouth 
+
+================================================*/
+
+@keyframes smile {
+    50% {
+        position: absolute;
+        background-color: greenyellow;
+        border-radius: 0 0 50px 50px;
+        z-index: 3;
+    }
+}
+
+
+/* annimation for ears 
+
+================================================*/
+
+@keyframes hotears {
+    0% {
+        background-color: white;
+    }
+    25% {
+        background-color: #e26929;
+    }
+    50% {
+        background-color: #e24b38;
+    }
+    75% {
+        background-color: #e23244;
+    }
+    100% {
+        background-color: white;
+    }
+}
+
+
+/* ears
+=============================================== */
+
+.left-ears,
+.right-ears {
+    position: absolute;
+    width: 20%;
+    height: 30%;
+    background-color: var(--main-other);
+    border-radius: 50%;
+    top: 20%;
+    z-index: -1;
+    animation: hotears 2s infinite;
+}
+
+.left-ears {
+    left: -10%;
+}
+
+.right-ears {
+    right: -10%;
+}

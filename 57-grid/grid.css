@@ -1,0 +1,43 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 73em;
+    margin: 0 auto;
+}
+
+.gutter {
+    flex: 1 1 0%;
+    padding: 1em;
+}
+
+.w1 .gutter {
+    flex-basis: 100%;
+}
+
+@media(min-width:30em) {
+    .w2 .gutter {
+        flex-basis: 50%;
+    }
+}
+
+@media(min-width:45em) {
+    .w3 .gutter {
+        flex-basis: 33.33%;
+    }
+}
+
+@media(min-width:61.25em) {
+    .w4 .gutter {
+        flex-basis: 25%;
+    }
+}

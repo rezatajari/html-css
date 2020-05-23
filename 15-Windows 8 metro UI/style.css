@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+/* set public attribute */
+
+body {
+    background-color: #0f6d39;
+}
+
+.container {
+    margin: 12% 0px 0px 12%;
+}
+
+.container>h1 {
+    color: white;
+    font-weight: 300;
+    font-size: 40px;
+    font-family: "Open Sans", arial;
+}
+
+.elements {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+}
+
+.wide:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
+.box:hover {
+    transform: scale(1.09);
+    transition: transform 0.2s;
+}
+
+
+/* icon position for wide boxes */
+
+.elements>a>i {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+/* icon position for square boxes */
+
+
+/* all of wide boxes */
+
+.wide {
+    position: relative;
+    width: 300px;
+    height: 120px;
+    margin: 5px;
+}
+
+
+/*  all of square boxes  */
+
+.box {
+    position: relative;
+    background-color: blue;
+    width: 145px;
+    height: 120px;
+    margin: 5px;
+}
+
+
+/* a tag and titles position attributes */
+
+a.wide,
+.box {
+    text-decoration: none;
+    color: white;
+}
+
+.wide h4,
+.box h4 {
+    position: absolute;
+    left: 12px;
+    bottom: -12px;
+}
+
+
+/* set colors */
+
+.blue {
+    background-color: #1E90FF;
+}
+
+.orange {
+    background-color: #e76022;
+}
+
+.redgay {
+    background-color: #DA312E;
+}
+
+.lime {
+    background-color: #61b812
+}
+
+.bluefish {
+    background-color: #02b9e3;
+}
+
+.yellow {
+    background-color: #dbb701;
+}
+
+
+/* set special attribute for calender */
+
+.cal-change>i {
+    position: absolute;
+    bottom: 0px;
+    font-size: 25px;
+    padding: 0px 0px 9px 9px;
+}
+
+.cal-change>h1 {
+    position: absolute;
+    font-family: "Open Sans", arial;
+    right: 0px;
+    font-size: 60px;
+    font-weight: 200;
+    padding: 1px 15px 0px 0px;
+    margin-top: 0px;
+}
+
+.cal-change>span {
+    position: absolute;
+    font-family: "Open Sans", arial;
+    right: 0px;
+    padding: 0px 13px 0px 0px;
+    bottom: 20px;
+}
+
+.cal-change>p {
+    position: absolute;
+    margin: 25px 0px 0px 25px;
+    width: 170px;
+}

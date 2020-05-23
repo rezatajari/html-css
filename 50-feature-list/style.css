@@ -1,0 +1,63 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: tahoma;
+    line-height: 1.6em;
+    font-weight: 700;
+    background-color: cornflowerblue;
+}
+
+.header {
+    height: 50vh;
+    background: url(header.png) no-repeat top center/contain #1b1b1b fixed;
+}
+
+.features {
+    max-width: 80em;
+    margin: 0 auto;
+}
+
+.feature {
+    padding: 1em 3em;
+}
+
+.feature-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-icon .fa {
+    font-size: 12em;
+    color: gold;
+}
+
+@media(min-width:48em) {
+    .header {
+        height: 100vh;
+    }
+    .feature {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .feature-icon {
+        width: 50%;
+    }
+    .feature-desc {
+        width: 50%;
+    }
+    .feature:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+}

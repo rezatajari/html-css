@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: tahoma;
+    line-height: 1.6em;
+    font-weight: 600;
+    background-color: lightgreen;
+}
+
+.cell {
+    padding: 1em;
+    border-radius: 5px;
+    border: 3px solid rebeccapurple;
+    background-color: lightseagreen;
+}
+
+.cell>p {
+    margin: 0em;
+}
